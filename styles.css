@@ -1,0 +1,138 @@
+:root{
+    --monday-color: #ee9b56;
+    --monday-hover-color: #f7ba89;
+    --tuesday-color: #7FC876;
+    --tuesday-hover-color: #96e78b;
+    --wednesday-color: #7976C8;
+    --wednesday-hover-color: #afacfd;
+    --thursday-color: #76b1c8;
+    --thursday-hover-color: #afe8ff;
+    --friday-color: #e070b5;
+    --friday-hover-color: #ffb3e2;
+}
+body{
+    box-sizing: border-box;
+}
+.main-item{
+    display: inline-block;
+}
+html{
+    background-color: black;
+}
+.main-item{
+    border: 1.5px solid white;
+    border-radius: 7px;
+    padding: 10px;
+    width: 280px;
+    height: 230px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.lessons-list{
+    list-style-type: square;
+}
+.lesson-title{
+text-align: center;
+font-family: Orbitron;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.lesson{
+text-align: left;
+font-family: Genos;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+}
+.body-logo{
+color: white;
+font-family: Grape Nuts;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+text-decoration: none;
+margin-left: 30px;
+margin-right: 50px;
+}
+.day-choose{
+color: white;
+font-family: Grape Nuts;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+margin-right: 50px;
+}
+.day{
+    background-color: #a38eca;
+}
+.random-link{
+    color: white;
+    font-family: Grape Nuts;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* 5 different structural pseudo-classes: */
+.main-list :first-child.main-item{
+    background-color: var(--monday-color);
+    box-shadow: 0px 0px 17px 4px var(--monday-color);
+}
+.main-list :nth-child(2).main-item{
+    background-color: var(--tuesday-color);
+    box-shadow: 0px 0px 17px 4px var(--tuesday-color);
+}
+.main-list :nth-child(3n).main-item{
+    background-color: var(--wednesday-color);
+    box-shadow: 0px 0px 17px 4px var(--wednesday-color);
+}
+.main-list :nth-child(n+4).main-item{
+    background-color: var(--thursday-color);
+    box-shadow: 0px 0px 17px 4px var(--thursday-color);
+}
+.main-list :last-child.main-item{
+    background-color: var(--friday-color);
+    box-shadow: 0px 0px 17px 4px var(--friday-color);
+}
+
+/* 5 different state pseudo-classes: */
+.main-list :first-child.main-item:hover{
+    background-color: var(--monday-hover-color);
+    box-shadow: 0px 0px 17px 4px var(--monday-hover-color);
+}
+.main-list :nth-child(2).main-item:hover{
+    background-color: var(--tuesday-hover-color);
+    box-shadow: 0px 0px 17px 4px var(--tuesday-hover-color);
+}
+.main-list :nth-child(3n).main-item:hover{
+    background-color: var(--wednesday-hover-color);
+    box-shadow: 0px 0px 17px 4px var(--wednesday-hover-color);
+}
+.main-list :nth-child(n+4).main-item:hover{
+    background-color: var(--thursday-hover-color);
+    box-shadow: 0px 0px 17px 4px var(--thursday-hover-color);
+}
+.main-list :last-child.main-item:hover{
+    background-color: var(--friday-hover-color);
+    box-shadow: 0px 0px 17px 4px var(--friday-hover-color);
+}
+
+.body-logo:active{
+    color: #9976d8;
+    font-size: 50.5px;
+}
+.day:focus{
+   background-color: #9976d8; 
+}
+
+.random-link:visited{
+color: #9976d8;
+}
+
+.main-item{
+    cursor: pointer;
+}
